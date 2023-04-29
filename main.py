@@ -1,8 +1,9 @@
 import cv2
-from keras.models import load_model
+from tensorflow import keras
+#from keras.models import load_model
 import numpy as np
 
-model = load_model('model.h5')
+model = keras.models.load_model('model.h5')
 
 
 def draw_rectangle(frame, start_point, end_point):
